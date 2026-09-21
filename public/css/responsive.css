@@ -1,0 +1,160 @@
+/**
+ * AI Loan Eligibility Checker - Responsive Design Breakpoints
+ * Validated across 1920px, 1440px, 1024px, 768px, 480px, 375px.
+ */
+
+/* Laptops & Tablets (1024px) */
+@media (max-width: 1024px) {
+  .tool-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .indicators-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(8, 11, 20, 0.96);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem;
+    gap: 0.75rem;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-menu.nav-menu-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .chat-container {
+    height: 520px;
+  }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .toast {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Small Tablets & Large Phones (480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .glass-card {
+    padding: 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .result-primary-number {
+    font-size: 1.85rem;
+  }
+
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .donut-legend {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .chat-message {
+    max-width: 95%;
+  }
+}
+
+/* Extra Small Phones (375px) */
+@media (max-width: 375px) {
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .brand-logo {
+    font-size: 1rem;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ai-loan-eligibility-checker",
+  "version": "1.0.0",
+  "description": "AI-powered BFSI financial decision-support platform featuring Loan Eligibility, Credit Score Analyzer, EMI Calculator, and Claude AI Guidance.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node tests/run-tests.js"
+  },
+  "keywords": [
+    "bfsi",
+    "loan-eligibility",
+    "credit-score",
+    "emi-calculator",
+    "claude-ai",
+    "financial-tools",
+    "fintech"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
